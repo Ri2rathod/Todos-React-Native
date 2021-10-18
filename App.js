@@ -1,21 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import style from './assets/style/title';
+import Title_component from './components/title_component';
+
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your </Text>
+    <View style={style.container}>
       <StatusBar style="auto" />
+     
+      <Title_component username="Ritesh"/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
