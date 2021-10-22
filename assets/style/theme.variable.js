@@ -1,7 +1,7 @@
 
 export default{
   BACKGROUND_BG_PRIMARY:'#413754', // GRAY
-  BACKGROUND_BG_SECOUNDARY:'#12102e', // BLACK
+  BACKGROUND_BG_SECOUNDARY:'#171010', // BLACK
   BACKGROUND_BG_:'#413754', //
 
   COLOR_PRIMARY:'#c13c33',
@@ -12,6 +12,5 @@ export default{
 
   OPENSANS_REGULAR:'OpenSans-Regular',
   OPENSANS_SEMIBOLD:'OpenSans-SemiBold',
-
 
 } 
