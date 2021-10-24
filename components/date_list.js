@@ -1,13 +1,16 @@
 import React from 'react';
 import { Text,FlatList, View,ScrollView} from 'react-native';
+import themeStyle from '../assets/style/theme.style';
+import dataList from '../assets/style/dataList';
 
 export default function Date_List() {
     //Static data to displaty in list
-    var date= new Date();
+    let date= new Date();
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  
 
-    var DATA = [];
+    let today_date=date.getDate();
+
+    let DATA = [];
 
     date.setDate(date.getDate()-3);
     
@@ -21,21 +24,22 @@ console.log(DATA);
 
     return (
   
-        <View >
+        <View style={themeStyle.Appcomponent}>
   
-          <FlatList 
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          data={DATA}
-          renderItem={function (item){
-            return(
-              <View style={{padding:0,backgroundColor:'white',margin:8,borderRadius:100,width:65,height:65,alignItems:'center',justifyContent:'center'}} >
-                <Text style={{color:"#000",textAlign:'center'}}>{item.item[0]}</Text>
-                <Text  style={{color:"#000"}} >{item.item[1]}</Text>
-              </View>
-            );
-          }}
-          keyExtractor={(item) => item[1]}
+          <FlatList  
+            style={dataList.date_list}  
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            data={DATA}
+            renderItem={function (item){
+              return(
+                <View style={item.item[0]==today_date?dataList.list_item_active:dataList.list_item} >
+                  <Text style={item.item[0]==today_date?dataList.list_item_text_active:dataList.list_item_text}>{item.item[0]}</Text>
+                  <Text  style={item.item[0]==today_date?dataList.list_item_text_active:dataList.list_item_text} >{item.item[1]}</Text>
+                </View>
+              );
+            }}
+            keyExtractor={(item) => item[1]}
           />
         </View>
     )
