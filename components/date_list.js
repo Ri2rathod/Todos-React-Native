@@ -19,7 +19,6 @@ export default function Date_List() {
         DATA.push([date.getDate(),days[date.getDay()]]);
     }
 
-console.log(DATA);
    
 
     return (
