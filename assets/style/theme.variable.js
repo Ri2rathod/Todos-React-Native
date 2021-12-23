@@ -8,6 +8,7 @@ export default{
 
   COLOR_WHITE:'#fff',
   COLOR_BLACK:'#2B2B2B',
+  COLOR_GRAY:'#2B2B2Baa',
   COLOR_LIGHT:'#EDEDED',
 
   OSWALD_LIGHT:'Oswald-Light',
