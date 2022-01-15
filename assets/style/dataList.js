@@ -6,8 +6,7 @@ import themeVariable from "./theme.variable";
 export default StyleSheet.create({
     date_list: { 
         backgroundColor: themeVariable.COLOR_WHITE,
-         borderRadius: 10,  
-        //  elevation: 10
+        borderRadius: 10, 
      },
     list_item: { 
         padding: 0, 
@@ -17,7 +16,7 @@ export default StyleSheet.create({
         width: 65, 
         height: 65,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     list_item_active: { 
         padding: 0, 
