@@ -13,7 +13,7 @@ export default StyleSheet.create({
   subsection:{
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal:8,
+    paddingHorizontal:4,
     marginVertical:8,
     alignItems:'center'
   }

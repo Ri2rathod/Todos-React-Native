@@ -16,8 +16,11 @@ export default function App() {
       <Title_component username="Ritesh"/>
       <Date_List />
       
-      <Sub_title/>
+      <Sub_title title={"Your Habits"} showbtn={true}/>
       <Card_list/>
+      <Sub_title title={"Today's Tasks"} showbtn={false}/>
+
+
     </View>
   );
 }
