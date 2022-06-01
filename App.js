@@ -6,6 +6,8 @@ import Date_List from './components/date_list';
 import themeStyle from './assets/style/theme.style';
 import Sub_title from './components/sub_title';
 import Card_list from './components/card_list';
+import Tasks from './components/tasks_container';
+
 
 
 export default function App() {
@@ -20,6 +22,7 @@ export default function App() {
       <Card_list/>
       <Sub_title title={"Today's Tasks"} showbtn={false}/>
 
+      <Tasks />
 
     </View>
   );
