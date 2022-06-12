@@ -7,24 +7,13 @@ import themeStyle from './assets/style/theme.style';
 import Sub_title from './components/sub_title';
 import Card_list from './components/card_list';
 import Tasks from './components/tasks_container';
+import Tabs from './Navigation/tabs';
 
 
 
 export default function App() {
   return (
-    <View style={themeStyle.container} >
-      <StatusBar style="auto" />
-     
-      <Title_component username="Ritesh"/>
-      <Date_List />
-      
-      <Sub_title title={"Your Habits"} showbtn={true}/>
-      <Card_list/>
-      <Sub_title title={"Today's Tasks"} showbtn={false}/>
-
-      <Tasks />
-
-    </View>
-  );
+   <Tabs/>
+  )
 }
 
